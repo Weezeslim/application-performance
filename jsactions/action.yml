@@ -1,0 +1,13 @@
+name: 'Performance Analysis'
+description: 'Action to analysis the applications performance'
+inputs:
+  benchmark:  # id of input
+    description: 'Set ram usage benchmark'
+    required: true
+    default: '100'
+outputs:
+  performanceresult: # id of output
+    description: 'The result gotten from the performance analysis'
+runs:
+  using: 'node20'
+  main: 'dist/index.js'
