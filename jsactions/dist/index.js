@@ -24916,14 +24916,6 @@ exports["default"] = _default;
 
 /***/ }),
 
-/***/ 337:
-/***/ ((module) => {
-
-module.exports = eval("require")("@actions/github");
-
-
-/***/ }),
-
 /***/ 9491:
 /***/ ((module) => {
 
@@ -26823,7 +26815,6 @@ var __webpack_exports__ = {};
 // This entry need to be wrapped in an IIFE because it need to be isolated against other modules in the chunk.
 (() => {
 const core = __nccwpck_require__(8021);
-const github = __nccwpck_require__(337);
 const { execSync } = __nccwpck_require__(2081);
 const path = __nccwpck_require__(1017);
 
