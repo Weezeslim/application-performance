@@ -19,13 +19,12 @@ def get_ram_usage():
 
 
 
-        return usage_mem_mb
         #return ram_usage_list
         
-        # if usage_mem_mb > benchmarkValue:
-        #     raise ValueError(f"Analysis failed.")
-        # else:
-        #     return usage_mem_mb
+        if usage_mem_mb > BENCHMARK_VALUE:
+            raise ValueError(f"Analysis failed, ram usage exceeds benchmark")
+        else:
+            return usage_mem_mb
         
 
     except Exception as e:

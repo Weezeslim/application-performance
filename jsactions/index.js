@@ -25,7 +25,7 @@ console.log('benchmark value:', getBenchmarkValue);
 
 // Execute the Python script with the input value using the shell command
 const getScriptResult = execSync(`python ${path_to_script} ${processId} ${getBenchmarkValue}`).toString().trim();
-console.log('Result of ram usage hereee:', getScriptResult);
+console.log('Application ram usage value:', getScriptResult);
 
 core.setOutput("performanceresult", getScriptResult);
 
